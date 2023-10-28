@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#task-input{
+    width: 80%;
+}
+
+#add-button{
+    background-color: pink;
+    border: none;
+
+}
+
+.task-area{
+    border: 1px solid lightgray;
+    margin-top: 1em;
+    position: relative;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+
+.task-tabs div{
+    padding: 1em;
+    cursor: pointer;
+}
+
+#tab-underline{
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    width: 50px;
+    top: 52px;
+    height: 4px;
+    padding: 0px;
+
+}
+
+.task{
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+
+}
+
+.task span{
+    padding : 1em
+}
+
+.task-done{
+    text-decoration: line-through;
+    background-color: lightgray;
+}
+
+.button-area{
+    display: flex;
+}
+
+.button-area button {
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.button-area button:first-child:hover {
+    background-color: lightgreen;
+
+} 
+
+.button-area button:nth-child(2):hover {
+    background-color: lightsalmon;
+
+} 
